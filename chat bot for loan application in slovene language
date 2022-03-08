@@ -1,0 +1,14 @@
+print('Vnesite ime in priimek')
+imeINpriimek=input()
+print('Vnesite znesek kredita')
+kredit=input()
+print('Vnesite število obrokov')
+štObrokov=input()
+print('Vnesite vaš mesečni dohodek')
+dohodek = int(input()) * 0.7
+mesečniObrok=int(kredit)/int(štObrokov)
+
+if dohodek <= mesečniObrok:
+    print((imeINpriimek) + ' ' + 'vaš mesečni dohodek je prenizek za pokrivanje finančnih obveznosti.')
+else: 
+    print((imeINpriimek) + ' ' + 'vaš mesečni obrok znaša' + ' ' + str(mesečniObrok))      
